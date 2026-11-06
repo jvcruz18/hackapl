@@ -83,7 +83,7 @@ section.block{padding:3.5rem 0}
 .hero .kid.l{left:max(2%,calc(50% - 560px))}
 .hero .kid.r{right:max(2%,calc(50% - 560px))}
 @media (max-width:980px){.hero .kid{height:250px;opacity:.95}.hero{padding-bottom:15rem}}
-@media (max-width:560px){.hero .kid{height:190px}.hero{padding-bottom:11.5rem}.hero .deco.star{display:none}.banner .deco.star{display:none}}
+@media (max-width:560px){.hero .kid{height:170px}.hero{padding-bottom:12.5rem}.hero .deco.star{display:none}.banner .deco.star{display:none}.cta .deco,.remember .deco{display:none}.brand img{height:34px}}
 
 /* bolha creme */
 .bubble{background:var(--cream);border-radius:48% 52% 46% 54% / 18% 22% 20% 24%;padding:2.4rem 2.6rem}
@@ -92,7 +92,7 @@ section.block{padding:3.5rem 0}
 .with-kid .kidimg{height:330px;width:auto}
 @media (max-width:760px){
   .with-kid,.with-kid.left{grid-template-columns:1fr}
-  .with-kid .kidimg{height:200px;margin:0 auto}
+  .with-kid .kidimg{height:160px;margin:0 auto}
   .with-kid.left .kidimg{order:2}
   .bubble{padding:1.8rem 1.5rem;border-radius:28px}
 }
@@ -119,7 +119,8 @@ section.block{padding:3.5rem 0}
 /* materiais */
 .kit{list-style:none;margin:1rem 0 0;padding:0}
 .kit li{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 1.2rem;background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:.6rem;flex-wrap:wrap}
-.kit .what{flex:1 1 260px}
+.kit .what{flex:1 1 260px;min-width:0}
+.kit li > .btn,.kit li > .soon{flex:0 0 auto}
 .kit .what b{display:block;color:var(--steel);font-weight:800}
 .kit .what small{color:var(--soft);font-size:.92rem}
 .btn{display:inline-block;font-weight:800;text-decoration:none;padding:.6rem 1.2rem;border-radius:999px;background:var(--blue);color:#fff !important;white-space:nowrap}
@@ -245,11 +246,11 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
         <div>
           <span class="tag">Formação para o Dia D</span>
           <h2 id="t-insc">Inscreva-se na formação</h2>
-          <p>Encontro online e ao vivo, obrigatório para quem vai aplicar o Dia D. Depois da inscrição, o link do encontro chega no seu e-mail. A gravação fica disponível neste site.</p>
+          <p>São dois encontros online e ao vivo: primeiro com as direções e a supervisão das escolas, depois com as professoras e os professores de toda a rede. Depois da inscrição, o link do encontro chega no seu e-mail.</p>
         </div>
         <div class="scards">
-          <div class="scard"><div class="seg">Anos finais</div><div class="sdate">Ter, 10/11</div><div class="stime">19h às 20h, online</div><a class="btn" href="https://docs.google.com/forms/d/17C-u9VvJUDdGKjglWo8_ARz8bYLpSi11rklNijc5ywI/viewform" target="_blank" rel="noopener">Inscrever-me</a></div>
-          <div class="scard ai"><div class="seg">Anos iniciais</div><div class="sdate">Qui, 12/11</div><div class="stime">19h às 20h, online</div><a class="btn" href="https://docs.google.com/forms/d/1YtFNy0CwIP5IH976nykgJHS2mstVIR0eBr54i17OVnw/viewform" target="_blank" rel="noopener">Inscrever-me</a></div>
+          <div class="scard"><div class="seg">Direções e supervisão</div><div class="sdate">Ter, 10/11</div><div class="stime">19h às 20h, online</div><a class="btn" href="https://docs.google.com/forms/d/17C-u9VvJUDdGKjglWo8_ARz8bYLpSi11rklNijc5ywI/viewform" target="_blank" rel="noopener">Inscrever-me</a></div>
+          <div class="scard ai"><div class="seg">Professores (anos iniciais e finais)</div><div class="sdate">Qui, 12/11</div><div class="stime">19h às 20h, online</div><a class="btn" href="https://docs.google.com/forms/d/1YtFNy0CwIP5IH976nykgJHS2mstVIR0eBr54i17OVnw/viewform" target="_blank" rel="noopener">Inscrever-me</a></div>
         </div>
       </div>
     </div>
@@ -271,7 +272,7 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
       <h2>Linha do tempo</h2>
       <p class="prose">O Dia D está confirmado entre 16 e 19 de novembro. As demais datas serão divulgadas aqui assim que estiverem definidas.</p>
       <ol class="timeline">
-        <li><div class="chev c1">Formação para o Dia D</div><div class="when">10/11 (anos finais) e 12/11 (anos iniciais)<small>19h às 20h, online e ao vivo. A gravação fica disponível neste site</small></div></li>
+        <li><div class="chev c1">Formação para o Dia D</div><div class="when">10/11 (direções e supervisão) e 12/11 (professores)<small>19h às 20h, online e ao vivo. A gravação fica disponível neste site</small></div></li>
         <li><div class="chev c2">Dia D</div><div class="when">Entre 16 e 19 de novembro<small>Confirmado para os anos iniciais e os anos finais</small></div></li>
         <li><div class="chev c3">Inscrições das equipes</div><div class="when">16 a 19/11<small>De preferência, no próprio Dia D</small></div></li>
         <li><div class="chev c4">Anúncio das finalistas</div><div class="when">24/11</div></li>
@@ -327,21 +328,21 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
     <div class="wrap with-kid">
       <div>
         <h2>Organização da formação</h2>
-        <p class="prose">Neste ano, retomamos rapidamente os princípios da aprendizagem criativa e dedicamos a maior parte do tempo ao plano de aula e às ferramentas que você vai usar no Dia D. A formação acontece em um encontro online ao vivo, com espaço para tirar dúvidas, e a gravação fica disponível aqui no site para quem não puder participar.</p>
+        <p class="prose">Neste ano, retomamos rapidamente os princípios da aprendizagem criativa e dedicamos a maior parte do tempo ao plano de aula e às ferramentas que você vai usar no Dia D. São dois encontros online e ao vivo, com espaço para tirar dúvidas. No dia 10/11, as direções e a supervisão conhecem a proposta para apoiar as escolas. No dia 12/11, as professoras e os professores dos anos iniciais e finais participam de uma parte geral e, em seguida, de um momento separado por segmento. A gravação fica disponível aqui no site para quem não puder participar.</p>
 
         <div class="duo" style="margin-top:1.5rem">
           <div>
-            <h3>Anos iniciais</h3>
+            <h3>Direções e supervisão</h3>
             <ul class="kit">
-              <li><div class="what"><b>Encontro de formação</b><small>Qui, 12/11, das 19h às 20h. O link chega por e-mail após a inscrição</small></div><a class="btn" href="https://docs.google.com/forms/d/1YtFNy0CwIP5IH976nykgJHS2mstVIR0eBr54i17OVnw/viewform" target="_blank" rel="noopener">Inscrever-me</a></li>
-              <li><div class="what"><b>Slides da formação</b><small>Liberados após a formação de 12/11</small></div><span class="soon">Após a formação</span></li>
+              <li><div class="what"><b>Encontro com a gestão</b><small>Ter, 10/11, das 19h às 20h. O link chega por e-mail após a inscrição</small></div><a class="btn" href="https://docs.google.com/forms/d/17C-u9VvJUDdGKjglWo8_ARz8bYLpSi11rklNijc5ywI/viewform" target="_blank" rel="noopener">Inscrever-me</a></li>
+              <li><div class="what"><b>Slides do encontro</b><small>Liberados após o encontro de 10/11</small></div><span class="soon">Após o encontro</span></li>
             </ul>
           </div>
           <div>
-            <h3>Anos finais</h3>
+            <h3>Professores (anos iniciais e finais)</h3>
             <ul class="kit">
-              <li><div class="what"><b>Encontro de formação</b><small>Ter, 10/11, das 19h às 20h. O link chega por e-mail após a inscrição</small></div><a class="btn" href="https://docs.google.com/forms/d/17C-u9VvJUDdGKjglWo8_ARz8bYLpSi11rklNijc5ywI/viewform" target="_blank" rel="noopener">Inscrever-me</a></li>
-              <li><div class="what"><b>Slides da formação</b><small>Liberados após a formação de 10/11</small></div><span class="soon">Após a formação</span></li>
+              <li><div class="what"><b>Formação para o Dia D</b><small>Qui, 12/11, das 19h às 20h. O link chega por e-mail após a inscrição</small></div><a class="btn" href="https://docs.google.com/forms/d/1YtFNy0CwIP5IH976nykgJHS2mstVIR0eBr54i17OVnw/viewform" target="_blank" rel="noopener">Inscrever-me</a></li>
+              <li><div class="what"><b>Slides da formação</b><small>Liberados após a formação de 12/11</small></div><span class="soon">Após a formação</span></li>
             </ul>
           </div>
         </div>
@@ -365,7 +366,8 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
         <img class="deco star sm" src="data:image/webp;base64,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" alt="" aria-hidden="true" style="bottom:18%;right:16%">
         <h3>Importante lembrar!</h3>
         <ul>
-          <li>A formação é obrigatória para quem vai aplicar o Dia D.</li>
+          <li>A formação de 12/11 é obrigatória para quem vai aplicar o Dia D.</li>
+          <li>O encontro de 10/11 prepara as direções e a supervisão para apoiar as professoras e os professores.</li>
           <li>Todos os materiais e comunicados ficam reunidos neste site.</li>
           <li>O registro após o Dia D é essencial para avaliarmos e valorizarmos as práticas da rede.</li>
         </ul>
@@ -430,9 +432,10 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
       <div>
         <h3>Materiais</h3>
         <ul class="kit">
+          <li><div class="what"><b>Plano de aula do Dia D</b><small>Etapas do turno, Ficha da Ideia e roteiro do vídeo pitch</small></div><span class="soon">Em breve</span></li>
           <li><div class="what"><b>Termo de autorização de uso de imagem</b><small>Obrigatório para quem aparece no vídeo. Envie às famílias até 11/11</small></div><a class="btn" href="https://docs.google.com/document/d/1aOpdb2lq9rHgE3HIC0m5bJxYNBnx14X2xackCfvnY8M/edit?usp=sharing" target="_blank" rel="noopener">Abrir termo</a></li>
           <li><div class="what"><b>Registro das autorizações</b><small>Informe quais estudantes têm autorização, uma resposta por turma. Os termos ficam arquivados na escola</small></div><a class="btn" href="https://docs.google.com/forms/d/1wKu6BJL1dw1NbLP9Zp7pMWvwpnkeWQCYzi6PQvBevug/viewform" target="_blank" rel="noopener">Registrar autorizações</a></li>
-          <li><div class="what"><b>Plano de aula do Dia D</b><small>Etapas do turno, Ficha da Ideia e roteiro do vídeo pitch</small></div><span class="soon">Em breve</span></li>
+          
           <li><div class="what"><b>Registro do Dia D</b><small>Conte como foi o Dia D na sua turma, uma resposta por turma</small></div><a class="btn" href="https://forms.gle/nZ3M6jCf5bayx2mJA" target="_blank" rel="noopener">Fazer registro</a></li>
         </ul>
 
@@ -533,6 +536,7 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
   <section class="block">
     <div class="wrap with-kid">
       <div>
+        <details><summary>Quem participa de cada formação?</summary><p>No dia 10/11, participam as direções e a supervisão (ou coordenação pedagógica) das escolas. No dia 12/11, participam as professoras e os professores dos anos iniciais e finais que vão aplicar o Dia D. Cada pessoa faz a inscrição no encontro correspondente.</p></details>
         <details><summary>Os estudantes precisam usar computador?</summary><p>Não. Todo o Dia D pode ser feito com papel, sucata e materiais simples. Tecnologia não é só aplicativo: uma solução pode ser um objeto, uma ferramenta, uma máquina simples ou um jeito novo de organizar algo.</p></details>
         <details><summary>Quantos estudantes podem formar uma equipe?</summary><p>Até 5 estudantes dos anos finais. A equipe pode misturar turmas, desde que todos sejam da mesma escola.</p></details>
         <details><summary>Quem faz a inscrição?</summary><p>O(a) professor(a) responsável pela equipe, pelo formulário da página Anos finais. Cada turma pode inscrever quantas ideias quiser.</p></details>
