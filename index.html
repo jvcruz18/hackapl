@@ -208,6 +208,17 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
   .view.on .hero .in{animation:pop .7s ease-out both}
   @keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
 }
+.team .names.ofs li{background:var(--chip)}
+.team .more{margin-top:auto;padding-top:.4rem;font-weight:800;color:var(--blue);text-decoration:none}
+.team .more:hover{text-decoration:underline}
+.hometeams .team small{margin-top:0;margin-bottom:.6rem}
+.salas td:nth-child(3){font-weight:800;color:var(--steel);white-space:nowrap}
+.turnos td:first-child{white-space:nowrap}
+.turnos ul{margin:0;padding-left:1.1rem}
+.turnos li{margin:.15rem 0}
+.tip{background:var(--chip);border-radius:16px;padding:1rem 1.2rem;margin-top:1.2rem;color:var(--text)}
+.tip b{color:var(--steel)}
+h2[id]{scroll-margin-top:84px}
 </style>
 </head>
 <body>
@@ -257,13 +268,33 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
     <div class="wrap">
       <div class="blue cta">
         <div>
-          <h3 id="t-equipes">Conheça as equipes finalistas!</h3>
-          <p>Cinco ideias dos anos finais vão para a final na Fundação Pedro Leopoldo, de 26 a 28/11. A apresentação para a banca é no sábado (28/11), às 10h, aberta ao público.</p>
+          <h3 id="t-equipes">A final do Hacka PL é nesta semana!</h3>
+          <p>De 26 a 28/11, na Fundação Pedro Leopoldo: hackathon com as cinco equipes finalistas e oficinas paralelas para estudantes dos anos finais. A apresentação para a banca é no sábado (28/11), às 10h, no auditório, aberta ao público.</p>
         </div>
         <div style="display:flex;gap:.7rem;flex-wrap:wrap;position:relative;z-index:2">
-          <a class="btn" href="#final">Ver finalistas e programação</a>
+          <a class="btn" href="#final">Ver a programação da final</a>
           <a class="btn" href="https://drive.google.com/file/d/1BudZujtSLhklSb_g-Cx05-9yAV3WiXzy/view?usp=sharing" target="_blank" rel="noopener">Ler o edital</a>
         </div>
+      </div>
+      <div class="teams hometeams">
+        <article class="team">
+          <span class="school">Hackathon · 26 a 28/11 · Sala 44</span>
+          <h3>Cinco equipes finalistas</h3>
+          <p>Estudantes de quatro escolas passam dois dias em imersão, com mentorias e prototipagem, e apresentam suas ideias para a banca no sábado.</p>
+          <ul class="names">
+            <li>Eu Também Consigo</li><li>Sala Inteligente</li><li>Aplicativo Knouly</li><li>Robô Reciclado</li><li>Conecta Leitura</li>
+          </ul>
+          <a class="more" href="#finalistas">Conhecer as equipes →</a>
+        </article>
+        <article class="team">
+          <span class="school">Oficinas paralelas · 26 e 27/11</span>
+          <h3>Seis oficinas, quatro turnos</h3>
+          <p>Para estudantes dos anos finais da rede, de 8h às 10h e de 14h às 16h. Cada escola já tem seu turno definido.</p>
+          <ul class="names ofs">
+            <li>Cultura maker</li><li>E-Sports</li><li>Pro Gênios</li><li>Robótica</li><li>Inteligência artificial</li><li>IA na Prática</li>
+          </ul>
+          <a class="more" href="#oficinas">Ver salas, turnos e escolas →</a>
+        </article>
       </div>
     </div>
   </section>
@@ -520,7 +551,7 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
         <h2>O que é?</h2>
         <p>A etapa final do Hacka PL é um grande encontro de inovação e criatividade, com duas ações simultâneas:</p>
         <p><b>O hackathon</b>, voltado para os estudantes dos anos finais, reúne as cinco melhores ideias inscritas após o Dia D. Nessa maratona criativa, as equipes finalistas participam de uma imersão com mentorias, oficinas práticas e desafios para aprimorar suas propostas e construir protótipos com o apoio de especialistas.</p>
-        <p style="margin:0"><b>Oficinas paralelas</b> de cultura maker, e-sports e tecnologia, para estudantes dos anos finais da rede, com vagas limitadas e participação organizada pelas escolas.</p>
+        <p style="margin:0"><b>Oficinas paralelas</b> de cultura maker, e-sports, robótica e inteligência artificial, para estudantes dos anos finais da rede, com vagas limitadas e participação organizada pelas escolas.</p>
       </div>
     </div>
   </section>
@@ -580,7 +611,7 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
   <section class="block" style="padding-top:0" aria-labelledby="t-prog">
     <div class="wrap">
       <h2 id="t-prog">Programação do hackathon</h2>
-      <p class="prose">As equipes finalistas ficam na sala 41 da Fundação Pedro Leopoldo durante os dois dias de imersão. Cada equipe deve levar pelo menos um tablet carregado, com carregador.</p>
+      <p class="prose">As equipes finalistas ficam na sala 44 da Fundação Pedro Leopoldo durante os dois dias de imersão. Cada equipe deve levar pelo menos um tablet carregado, com carregador.</p>
       <div class="tbl">
         <table>
           <thead><tr><th style="width:22%">Dia</th><th style="width:20%">Horário</th><th>Atividade</th></tr></thead>
@@ -600,17 +631,37 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
   <section class="block" style="padding-top:0" aria-labelledby="t-oficinas">
     <div class="wrap">
       <h2 id="t-oficinas">Oficinas paralelas</h2>
-      <p class="prose">Para estudantes dos anos finais da rede, nos dias 26 e 27/11. Turnos de 8h às 10h e de 14h às 16h. As vagas são limitadas e a participação é organizada pelas escolas, com lista enviada antes do evento.</p>
+      <p class="prose">Para estudantes dos anos finais da rede, na quinta (26/11) e na sexta (27/11), na Fundação Pedro Leopoldo. Cada oficina dura 2 horas: de <b>8h às 10h</b> (manhã) e de <b>14h às 16h</b> (tarde). A participação é organizada pelas escolas, com transporte e lanche garantidos pela Secretaria.</p>
+
+      <h3>Onde fica cada oficina</h3>
       <div class="tbl">
-        <table>
-          <thead><tr><th style="width:34%">Oficina</th><th>Quinta, 26/11</th><th>Sexta, 27/11</th><th style="width:16%">Vagas por turno</th></tr></thead>
+        <table class="salas">
+          <thead><tr><th style="width:34%">Oficina</th><th>Quando</th><th style="width:18%">Sala</th><th style="width:14%">Vagas por turno</th></tr></thead>
           <tbody>
-            <tr><td><b>Escola do Futuro: cultura maker</b><br><small>Escolas Criativas</small></td><td>Manhã e tarde</td><td>—</td><td>40</td></tr>
-            <tr><td><b>E-Sports com campeonato</b></td><td>Manhã e tarde</td><td>Manhã</td><td>40</td></tr>
-            <tr><td><b>Oficinas da FPL</b><br><small>Duas turmas simultâneas, incluindo inteligência artificial</small></td><td>Manhã e tarde</td><td>Manhã e tarde</td><td>20 por turma</td></tr>
+            <tr><td><b>Escola do Futuro: cultura maker</b><br><small>Escolas Criativas</small></td><td>Quinta, manhã e tarde</td><td>Sala 41</td><td>40</td></tr>
+            <tr><td><b>E-Sports com campeonato</b></td><td>Quinta, manhã e tarde<br>Sexta, manhã</td><td>Auditório</td><td>40</td></tr>
+            <tr><td><b>Pro Gênios</b></td><td>Quinta e sexta, manhã e tarde</td><td>Sala 43</td><td>40</td></tr>
+            <tr><td><b>Robótica</b><br><small>FPL</small></td><td>Quinta e sexta, manhã e tarde</td><td>Sala 46</td><td>20</td></tr>
+            <tr><td><b>Inteligência artificial</b><br><small>FPL</small></td><td>Quinta e sexta, manhã e tarde</td><td>Sala 45 (Informática)</td><td>20</td></tr>
+            <tr><td><b>IA na Prática: criando com inteligência artificial</b><br><small>Secretaria Municipal de Educação</small></td><td>Sexta, tarde</td><td>Auditório</td><td>40</td></tr>
           </tbody>
         </table>
       </div>
+
+      <h3>Quem participa em cada turno</h3>
+      <div class="tbl">
+        <table class="turnos">
+          <thead><tr><th style="width:22%">Turno</th><th style="width:36%">Escolas</th><th>Oficinas do turno</th></tr></thead>
+          <tbody>
+            <tr><td><b>Quinta, 26/11</b><br>8h às 10h</td><td>EM Heitor Cláudio de Sales, EM Izabel Gomes Teixeira, EM José Elias da Costa e EM José Pedro Filho<br><small>40 estudantes de cada escola · 160 no total</small></td><td><ul><li>Cultura maker · Sala 41</li><li>E-Sports · Auditório</li><li>Pro Gênios · Sala 43</li><li>Robótica · Sala 46</li><li>Inteligência artificial · Sala 45</li></ul></td></tr>
+            <tr><td><b>Quinta, 26/11</b><br>14h às 16h</td><td>EM Dona Carmem Barroso<br><small>160 estudantes</small></td><td><ul><li>Cultura maker · Sala 41</li><li>E-Sports · Auditório</li><li>Pro Gênios · Sala 43</li><li>Robótica · Sala 46</li><li>Inteligência artificial · Sala 45</li></ul></td></tr>
+            <tr><td><b>Sexta, 27/11</b><br>8h às 10h</td><td>EM Heitor Cláudio de Sales, EM Izabel Gomes Teixeira e EM José Pedro Filho<br><small>40 estudantes de cada escola · 120 no total</small></td><td><ul><li>E-Sports · Auditório</li><li>Pro Gênios · Sala 43</li><li>Robótica · Sala 46</li><li>Inteligência artificial · Sala 45</li></ul></td></tr>
+            <tr><td><b>Sexta, 27/11</b><br>14h às 16h</td><td>EM Dona Carmem Barroso<br><small>120 estudantes</small></td><td><ul><li>Pro Gênios · Sala 43</li><li>Robótica · Sala 46</li><li>Inteligência artificial · Sala 45</li><li>IA na Prática · Auditório</li></ul></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tip"><b>Outros espaços:</b> o hackathon das equipes finalistas fica na <b>Sala 44</b> na quinta e na sexta, e a apresentação final é no <b>Auditório</b>, no sábado às 10h. Na sexta de manhã, a <b>Sala 41</b> recebe o <b>Ateliê Docente: a Escola do Futuro na sala de aula</b>, oficina para professoras e professores da rede.</div>
     </div>
   </section>
 </div>
@@ -660,11 +711,14 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
   var views=["inicio","formacao","anos-iniciais","anos-finais","final","duvidas"];
   function show(){
     var h=(location.hash||"").replace("#","");
+    var sub={"finalistas":["final","t-finalistas"],"oficinas":["final","t-oficinas"],"programacao":["final","t-prog"]}[h];
+    if(sub) h=sub[0];
     if(views.indexOf(h)<0) h="inicio";
     views.forEach(function(v){document.getElementById("view-"+v).classList.toggle("on",v===h);});
     document.querySelectorAll("nav a").forEach(function(a){
       if(a.getAttribute("href")==="#"+h) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current");
     });
+    if(sub){var el=document.getElementById(sub[1]);if(el){setTimeout(function(){el.scrollIntoView({behavior:"smooth",block:"start"});},30);return;}}
     window.scrollTo(0,0);
   }
   window.addEventListener("hashchange",show);
