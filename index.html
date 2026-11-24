@@ -162,7 +162,19 @@ td b{color:var(--steel)}
 .flow .dot{width:52px;height:52px;border-radius:50%;margin:0 auto .7rem;display:grid;place-items:center;font-weight:900;font-size:1.2rem;color:#fff;background:var(--blue);box-shadow:0 0 0 6px var(--chip)}
 .flow b{display:block;color:var(--steel);font-weight:800;margin-bottom:.3rem}
 .flow span{font-size:.92rem;color:var(--soft)}
-@media (max-width:760px){.flow{grid-template-columns:1fr 1fr;row-gap:1.8rem}}
+.flow.five{grid-template-columns:repeat(5,1fr)}
+@media (max-width:760px){.flow,.flow.five{grid-template-columns:1fr 1fr;row-gap:1.8rem}}
+
+/* equipes finalistas */
+.teams{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;margin-top:1.2rem}
+.team{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.3rem 1.3rem 1.1rem;display:flex;flex-direction:column}
+.team .school{font-size:.85rem;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.02em}
+.team h3{margin:.4rem 0 .5rem;font-size:1.25rem;color:var(--steel);line-height:1.25}
+.team p{margin:0 0 .9rem;font-size:.95rem;color:var(--text)}
+.team .names{list-style:none;margin:0 0 .9rem;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}
+.team .names li{background:var(--chip);color:var(--steel);font-weight:700;font-size:.88rem;padding:.3rem .7rem;border-radius:999px}
+.team small{margin-top:auto;color:var(--soft);font-size:.88rem}
+td small{color:var(--soft)}
 
 /* dúvidas */
 details{background:var(--card);border:1px solid var(--line);border-radius:16px;margin-bottom:.6rem;max-width:72ch}
@@ -245,11 +257,11 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
     <div class="wrap">
       <div class="blue cta">
         <div>
-          <h3 id="t-equipes">Anos finais: inscreva sua equipe!</h3>
-          <p>As cinco melhores ideias vão para a final na Fundação Pedro Leopoldo, com mentorias e oficinas. Equipes de até 5 estudantes, com vídeo de até 2 minutos. Inscrições até 20/11.</p>
+          <h3 id="t-equipes">Conheça as equipes finalistas!</h3>
+          <p>Cinco ideias dos anos finais vão para a final na Fundação Pedro Leopoldo, de 26 a 28/11. A apresentação para a banca é no sábado (28/11), às 10h, aberta ao público.</p>
         </div>
         <div style="display:flex;gap:.7rem;flex-wrap:wrap;position:relative;z-index:2">
-          <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdWQFjn9QXMwqtEtwn8wgEJtRNvDZl47fiPdCHsmk8DL7eS9A/viewform" target="_blank" rel="noopener">Inscrever equipe</a>
+          <a class="btn" href="#final">Ver finalistas e programação</a>
           <a class="btn" href="https://drive.google.com/file/d/1BudZujtSLhklSb_g-Cx05-9yAV3WiXzy/view?usp=sharing" target="_blank" rel="noopener">Ler o edital</a>
         </div>
       </div>
@@ -508,7 +520,7 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
         <h2>O que é?</h2>
         <p>A etapa final do Hacka PL é um grande encontro de inovação e criatividade, com duas ações simultâneas:</p>
         <p><b>O hackathon</b>, voltado para os estudantes dos anos finais, reúne as cinco melhores ideias inscritas após o Dia D. Nessa maratona criativa, as equipes finalistas participam de uma imersão com mentorias, oficinas práticas e desafios para aprimorar suas propostas e construir protótipos com o apoio de especialistas.</p>
-        <p style="margin:0"><b>Oficinas paralelas</b> de cultura maker sobre a Escola do Futuro, para estudantes dos anos finais, com vagas limitadas e pré-inscrição pelas escolas.</p>
+        <p style="margin:0"><b>Oficinas paralelas</b> de cultura maker, e-sports e tecnologia, para estudantes dos anos finais da rede, com vagas limitadas e participação organizada pelas escolas.</p>
       </div>
     </div>
   </section>
@@ -516,18 +528,89 @@ footer .qf{font-weight:900;font-size:1.15rem;line-height:1.1}
   <section class="block" style="padding-top:0">
     <div class="wrap">
       <h2>Como funciona o hackathon</h2>
-      <ol class="flow">
-        <li><div class="dot">1</div><b>Inscrições</b><span>De 16 a 20/11, as escolas dos anos finais inscrevem as ideias criadas pelas equipes.</span></li>
-        <li><div class="dot">2</div><b>Seleção das finalistas</b><span>Cinco equipes são selecionadas para a final.</span></li>
-        <li><div class="dot">3</div><b>Dia 1</b><span>Oficinas de modelagem da ideia e prototipagem, com rodadas de mentoria.</span></li>
-        <li><div class="dot">4</div><b>Dia 2</b><span>Oficina de pitch, pré-pitch com mentores e apresentação final para a banca.</span></li>
+      <ol class="flow five">
+        <li><div class="dot">1</div><b>Inscrições</b><span>De 16 a 20/11, as escolas dos anos finais inscreveram as ideias criadas pelas equipes.</span></li>
+        <li><div class="dot">2</div><b>Seleção das finalistas</b><span>Cinco equipes foram selecionadas para a final.</span></li>
+        <li><div class="dot">3</div><b>Dia 1 · 26/11</b><span>Modelagem da ideia no canvas, jornada do usuário e desenho das telas.</span></li>
+        <li><div class="dot">4</div><b>Dia 2 · 27/11</b><span>Protótipo, estrutura do pitch e pré-pitch com mentores.</span></li>
+        <li><div class="dot">5</div><b>Dia 3 · 28/11</b><span>Ensaio e apresentação final para a banca, com premiação.</span></li>
       </ol>
-      <h3 style="margin-top:2.5rem">Programação</h3>
-      <ul class="kit">
-        <li><div class="what"><b>Equipes finalistas</b></div><span class="soon">Em breve</span></li>
-        <li><div class="what"><b>Programação do evento</b></div><span class="soon">Em breve</span></li>
-        <li><div class="what"><b>Oficinas paralelas</b></div><span class="soon">Em breve</span></li>
-      </ul>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0" aria-labelledby="t-finalistas">
+    <div class="wrap">
+      <h2 id="t-finalistas">Equipes finalistas</h2>
+      <p class="prose">Parabéns às cinco equipes que vão representar suas escolas na final do Hacka PL!</p>
+      <div class="teams">
+        <article class="team">
+          <span class="school">EM Dona Carmem Barroso · 6º ano</span>
+          <h3>Eu Também Consigo: Monitores Mirins</h3>
+          <p>Site com vídeos feitos pelos próprios estudantes e um jogo que explica a lição em voz alta, para quem fica sem entender e não tem a quem perguntar.</p>
+          <small>Professora: Edna Avelar</small>
+        </article>
+        <article class="team">
+          <span class="school">EM Heitor Cláudio de Sales · 8º ano</span>
+          <h3>Sala Inteligente</h3>
+          <p>Aplicativo que reúne notas, frequência, avisos, calendário de provas, achados e perdidos e um mapa digital da escola para estudantes e famílias.</p>
+          <small>Professora: Renata Santos</small>
+        </article>
+        <article class="team">
+          <span class="school">EM Izabel Gomes Teixeira · 9º ano</span>
+          <h3>Aplicativo Knouly</h3>
+          <p>Aulas curtas, quizzes e dúvidas enviadas sem mostrar o nome, com ajustes de acessibilidade para cada estudante aprender do seu jeito.</p>
+          <small>Professora: Carolina Coelho</small>
+        </article>
+        <article class="team">
+          <span class="school">EM Izabel Gomes Teixeira · 7º ano</span>
+          <h3>Robô Reciclado</h3>
+          <p>Ponto de coleta de lixo eletrônico na escola e um robô feito de sucata e Arduino, para mostrar que o descarte pode virar aprendizagem.</p>
+          <small>Professora: Marilha Paixão</small>
+        </article>
+        <article class="team">
+          <span class="school">EM José Pedro Filho · 8º ano</span>
+          <h3>Conecta Leitura</h3>
+          <p>Plataforma que localiza os livros das bibliotecas da rede, com um assistente que sugere leituras e QR Code no lugar do registro em papel.</p>
+          <small>Professores: Luciana Neves e Rafael Flores</small>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0" aria-labelledby="t-prog">
+    <div class="wrap">
+      <h2 id="t-prog">Programação do hackathon</h2>
+      <p class="prose">As equipes finalistas ficam na sala 41 da Fundação Pedro Leopoldo durante os dois dias de imersão. Cada equipe deve levar pelo menos um tablet carregado, com carregador.</p>
+      <div class="tbl">
+        <table>
+          <thead><tr><th style="width:22%">Dia</th><th style="width:20%">Horário</th><th>Atividade</th></tr></thead>
+          <tbody>
+            <tr><td><b>Quinta, 26/11</b></td><td>8h às 12h</td><td>Abertura, workshop de modelagem e preenchimento dos canvas</td></tr>
+            <tr><td></td><td>13h às 16h</td><td>Workshop de prototipagem, jornada do usuário e desenho das telas</td></tr>
+            <tr><td><b>Sexta, 27/11</b></td><td>8h às 12h</td><td>Workshop de pitch, geração das telas e construção do protótipo e dos slides, com mentores</td></tr>
+            <tr><td></td><td>13h às 16h</td><td>Refinamento dos slides e pré-pitch com mentores</td></tr>
+            <tr><td><b>Sábado, 28/11</b></td><td>8h às 10h</td><td>Ajustes finais e ensaio das apresentações</td></tr>
+            <tr><td></td><td>10h às 11h30</td><td><b>Apresentação final para a banca e premiação</b>, no auditório da FPL, aberta ao público</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0" aria-labelledby="t-oficinas">
+    <div class="wrap">
+      <h2 id="t-oficinas">Oficinas paralelas</h2>
+      <p class="prose">Para estudantes dos anos finais da rede, nos dias 26 e 27/11. Turnos de 8h às 10h e de 14h às 16h. As vagas são limitadas e a participação é organizada pelas escolas, com lista enviada antes do evento.</p>
+      <div class="tbl">
+        <table>
+          <thead><tr><th style="width:34%">Oficina</th><th>Quinta, 26/11</th><th>Sexta, 27/11</th><th style="width:16%">Vagas por turno</th></tr></thead>
+          <tbody>
+            <tr><td><b>Escola do Futuro: cultura maker</b><br><small>Escolas Criativas</small></td><td>Manhã e tarde</td><td>—</td><td>40</td></tr>
+            <tr><td><b>E-Sports com campeonato</b></td><td>Manhã e tarde</td><td>Manhã</td><td>40</td></tr>
+            <tr><td><b>Oficinas da FPL</b><br><small>Duas turmas simultâneas, incluindo inteligência artificial</small></td><td>Manhã e tarde</td><td>Manhã e tarde</td><td>20 por turma</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 </div>
